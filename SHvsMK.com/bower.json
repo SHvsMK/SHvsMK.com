@@ -1,0 +1,21 @@
+{
+  "name": "SHvsMK.com",
+  "description": "",
+  "main": "",
+  "authors": [
+    "SHvsMK <SHvsMK@gmail.com>"
+  ],
+  "license": "SHvsMK",
+  "homepage": "SHvsMK.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
