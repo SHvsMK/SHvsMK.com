@@ -1,0 +1,82 @@
+.page-cover {
+  display: block;
+  z-index: 629;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(./../images/SHvsMK_homepage_bg.jpg);
+  background-size: cover;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.page-title-name {
+  font-style: italic;
+  font-family: sans-serif;
+  color: white;
+}
+
+.page-title-sentence {
+  font-size: 1.4em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  color: #CCCCCC;
+}
+
+.SHvsMK_img {
+  height: 80px;
+  width: 80px;
+}
+
+.page-title-divider {
+  width: 35%;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.self-intro {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: monospace;
+}
+
+.page-intro-divider {
+  width: 40%;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.guide-sentence {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: monospace;
+}
+
+.who-what-how {
+  margin-top: 30px;
+}
+
+.who {
+  text-align: center;
+}
+
+.who-btn, .what-btn, .how-btn {
+  display: block;
+  padding: 50px 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: .9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: none;
+  text-decoration: none !important;
+}
+
+.what {
+  text-align: center;
+}
+
+.how {
+  text-align: center;
+}
