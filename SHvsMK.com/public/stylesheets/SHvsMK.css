@@ -32,8 +32,45 @@
 }
 
 .page-title-divider {
-  width: 35%;
+  width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.how-icon-hide-list {
+  line-height: 20px;
+  opacity: 1;
+  padding: 5px;
+}
+
+.how-icon-hide-list.ng-hide-add, .how-icon-hide-list.ng-hide-remove {
+  transition: all linear 0.2s;
+}
+
+.how-icon-hide-list.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 5px;
+}
+
+.how-icon-list {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.how-icon {
+  font-size: 15px;
+  color: #CCCCCC;
+  text-decoration: none !important;
+}
+
+.how-icon:hover {
+  color: white !important;
+}
+
+.SHvsMK_icon_img {
+  margin-left: -48px;
+  height: 15px;
+  opacity: 0.7;
 }
 
 .self-intro {
@@ -57,26 +94,21 @@
   margin-top: 30px;
 }
 
-.who {
-  text-align: center;
-}
-
 .who-btn, .what-btn, .how-btn {
+  color: #CCCCCC;
   display: block;
   padding: 50px 20px;
-  border: 1px solid white;
+  border: 1px solid #CCCCCC;
   border-radius: 50%;
   font-size: .9em;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: none;
   text-decoration: none !important;
-}
-
-.what {
   text-align: center;
 }
 
-.how {
-  text-align: center;
+.who-btn:hover, .what-btn:hover, .how-btn:hover {
+  color: white !important;
+  border-color: white !important;
 }

@@ -5,13 +5,43 @@
     <link rel="stylesheet" href="stylesheets/SHvsMK.css">
   </head>
   <body>
-    <div class="page-cover">
+    <div class="page-cover" ng-app="SHvsMK" ng-controller="SHvsMKCtrl">
       <div class="page-content col-lg-8 col-lg-offset-2">
-        <div class="page-title">
-          <img class="SHvsMK_img" src="images/SHvsMK.png">
-          <h1 class="page-title-name">SHvsMK</h1>
-          <span class="page-title-sentence">WE ARE WHO WE ARE</span>
-          <hr class="page-title-divider">
+        <div class="page-title row">
+          <div class="page-title-part col-lg-4 col-lg-offset-4">
+            <img class="SHvsMK_img" src="images/SHvsMK.png">
+            <h1 class="page-title-name">SHvsMK</h1>
+            <span class="page-title-sentence">WE ARE WHO WE ARE</span>
+            <hr class="page-title-divider">
+          </div>
+          <div class="col-lg-3 how-icon-hide-list" ng-show="how_list">
+            <ul class="how-icon-list">
+              <li class="SHvsMK-li">
+                <a class="how-icon" href="/">
+                  <div class="SHvsMK_icon row">
+                    <img class="SHvsMK_icon_img" src="images/SHvsMK_icon.ico">
+                    <span class="SHvsMK_website">SHvsMK.com</span>
+                  </div>
+                </a>
+              </li>
+              <li class="github-li">
+                <a class="how-icon" href="https://github.com/SHvsMK">
+                  <div class="github row">
+                    <i class="fa fa-github"></i>
+                    <span>github.com/SHvsMK</span>
+                  </div>
+                </a>
+              </li>
+              <li class="gmail-li">
+                <a class="how-icon" href="mailto:SHvsMK@gmail.com">
+                  <div class="gmail row">
+                    <i class="fa fa-envelope"></i>
+                    <span>SHvsMK@gmail.com</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-intro">
           <div class="col-lg-4 col-lg-offset-4">
@@ -39,12 +69,16 @@
               <a href="#" class="what-btn">What</a>
             </div>
             <div class="how col-lg-2">
-              <a href="#" class="how-btn">How</a>
+              <a href="" class="how-btn" ng-click="how()">How</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-2">
+        asdf
+      </div>
     </div>
   </body>
   <%- include footer %>
+  <script src="javascripts/SHvsMK.js"></script>
 </html>
