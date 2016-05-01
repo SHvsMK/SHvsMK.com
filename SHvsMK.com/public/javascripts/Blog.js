@@ -1,19 +1,23 @@
 $(document).ready(function() {
 
   $('.Code').click(function() {
-    window.location.href = '/Blog/Code'
+    window.location.href = '/Blog/Code';
   });
 
   $('.Food').click(function() {
-    window.location.href = '/Blog/Food'
+    window.location.href = '/Blog/Food';
   });
 
   $('.Travel').click(function() {
-    window.location.href = '/Blog/Travel'
+    window.location.href = '/Blog/Travel';
   });
 
   $('.Photo').click(function() {
-    window.location.href = '/Blog/Photo'
+    window.location.href = '/Blog/Photo';
+  });
+
+  $('.chatting_room_door').click(function() {
+    window.location.href = '/ChattingRoom';
   });
 
   $('.Code').hover(function() {
@@ -48,6 +52,13 @@ $(document).ready(function() {
     $('.Photo').css('animation-play-state', 'running');
   });
 
+  $('.chatting_room_door').hover(function() {
+    $('.chat_room').html("JOIN");
+    $('.chat_room').css('font-style', 'italic');
+    $('.chat_room').css('font-family', 'sans-serif');
+    $('.chat_room').css('margin-left', '50px');
+    $('.chat_room').css('margin-top', '20px');
+  });
 
   var height = 0;
   var width = 0;

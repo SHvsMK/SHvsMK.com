@@ -1,0 +1,43 @@
+.nav-title {
+  background-color: black;
+  height: 60px;
+}
+
+.nav-pic {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.SHvsMK_img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-chat-name {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.nav-content-side {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.redirect {
+  color: #CCCCCC;
+  text-decoration: none !important;
+}
+
+.redirect:hover {
+  color: white;
+}
+
+.nav-content-name {
+  color: black;
+  font-size: 40px;
+}

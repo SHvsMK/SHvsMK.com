@@ -1,5 +1,25 @@
 .chatting_room_door {
   height: 120px;
   width: 120px;
-  background-color: red;
+  background-image: url(./../images/chat_room.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
+
+.folded-corner {
+   width: 0px;
+   height: 0px;
+   position: absolute;
+   top: -1px;
+   right: -1px;
+   border-width: 0;
+   border-style: solid;
+   background: hsla(260,5%,60%,0.2);
+   box-shadow: 2px -2px 0px #fff, 0 1px 1px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+   border-radius: 0 0 0 15px;
+   border-color: #E84C59 #E84C59 transparent transparent;
+   transition: border-width 0.2s ease-out;
+}
+
+.chatting_room_door:hover .folded-corner {border-width: 0 100px 100px 0;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SHvsMK Sign Up</title>
+    <link rel="stylesheet" href="stylesheets/Signup.css">
+    <%- include header %>
+  </head>
+  <body>
+    <div class="row nav-title">
+      <div class="col-lg-3 nav-chat-name">
+        SHvsMK
+      </div>
+      <div class="col-lg-1 col-lg-offset-2 nav-pic">
+        <img class="SHvsMK_img" src="images/SHvsMK.png">
+      </div>
+      <div class="col-lg-6 nav-content-side">
+        <div class="col-lg-2 col-lg-offset-5">
+          <a class="redirect" href="/">Home</a>
+        </div>
+        <div class="col-lg-2">
+          <a class="redirect" href="/Signin">Sign In</a>
+        </div>
+        <div class="col-lg-2">
+          <a class="redirect" href="/Signup">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-5 nav-content-name">
+        Sign Up
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="col-lg-9 col-lg-offset-1 signup-window">
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">@</span>
+            <input class="form-control username" type="text" placeholder="Username">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">
+              <i class="fa fa-envelope-o"></i>
+            </span>
+            <input class="form-control email" type="email" placeholder="Email">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">
+              <i class="fa fa-key"></i>
+            </span>
+            <input class="form-control password" type="password" placeholder="Password">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">
+              <i class="fa fa-key"></i>
+            </span>
+            <input class="form-control confirm_password" type="password" placeholder="Confirm Password">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">@</span>
+            <input class="form-control" type="text" placeholder="x">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 signup-btn">
+            <div class="col-lg-4 col-lg-offset-1">
+              <button class="btn btn-primary signup_submit">Sign Up</button>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2">
+              <button class="btn btn-primary reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <%- include footer %>
+  <script src="javascripts/Signup.js"></script>
+</html>

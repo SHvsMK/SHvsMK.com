@@ -1,0 +1,64 @@
+.nav-title {
+  background-color: black;
+  height: 60px;
+}
+
+.nav-pic {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.SHvsMK_img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-chat-name {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.nav-content-side {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.redirect {
+  color: #CCCCCC;
+  text-decoration: none !important;
+}
+
+.redirect:hover {
+  color: white;
+}
+
+.nav-content-name {
+  color: black;
+  font-size: 40px;
+}
+
+.signup-window {
+  border-width: 3px;
+  border-color: #E84C59;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 3px 3px 9px #444444;
+}
+
+.input_group {
+  margin-top: 30px;
+}
+
+.signup-btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.reset {
+  width: 75px;
+}
