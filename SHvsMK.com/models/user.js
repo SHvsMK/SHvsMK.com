@@ -8,7 +8,7 @@ var UserSchema = new Schema({
   create_at: { type: Date, default: Date.now },
   updata_at: { type: Date, default: Date.now },
   active: { type: Boolean, default: false },
-  // access_token: { type: String },
+  access_token: { type: String },
 });
 
 UserSchema.index({username: 1}, {unique: true});

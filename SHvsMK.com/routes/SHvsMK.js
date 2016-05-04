@@ -11,13 +11,13 @@ router.get('/', function(req, res, next) {
   res.render('SHvsMK');
 });
 
-router.get('/signin', Signin.ShowSigninPage);
+/* Sign Up Router */
 
 router.get('/signup', Signup.ShowSignupPage);
 router.post('/signup', Signup.Signup);
 
-/* POST home page. */
-// router.post('/', function(req, res) {
-// })
+/* Sign In Router */
+router.get('/signin', Signin.ShowSigninPage);
+router.post('/signin', Signin.Signin);
 
 module.exports = router;

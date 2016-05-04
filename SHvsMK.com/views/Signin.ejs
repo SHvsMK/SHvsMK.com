@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SHvsMK Sign Up</title>
+    <title>SHvsMK Sign In</title>
     <link rel="stylesheet" href="stylesheets/Signin.css">
     <%- include header %>
   </head>
@@ -32,8 +32,30 @@
       </div>
     </div>
     <div class="row">
-
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="col-lg-9 col-lg-offset-1 signin-window">
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">@</span>
+            <input class="form-control username" type="text" placeholder="Username">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 input-group input_group">
+            <span class="input-group-addon">
+              <i class="fa fa-key"></i>
+            </span>
+            <input class="form-control password" type="password" placeholder="Password">
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 signin-btn">
+            <div class="col-lg-4 col-lg-offset-1">
+              <button class="btn btn-primary signin_submit">Sign In</button>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2">
+              <button class="btn btn-primary reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <%- include footer %>
+  <script src="javascripts/Signin.js"></script>
 </html>

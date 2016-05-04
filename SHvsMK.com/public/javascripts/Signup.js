@@ -22,11 +22,24 @@ $(document).ready(function() {
       url: '/Signup',
       data: data,
       error: function(err) {
-        alert('no');
+        alert(err['status']);
       },
-      success: function(data) {
-        alert(data);
+      success: function(res) {
+        alert(res.message);
+        if(res.success == true) {
+          localStorage.setItem('token', res.token);
+          window.location.href = '/Signin';
+        } else {
+          window.location.href = '/Signup';
+        }
       }
     });
+  });
+
+  $('.reset').click(function() {
+    $('.username').val() = "";
+    $('.email').val() = "";
+    $('.password').val() = "";
+    $('.confirm_password').val() = "";
   });
 });

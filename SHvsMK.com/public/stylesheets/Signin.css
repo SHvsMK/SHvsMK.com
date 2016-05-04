@@ -41,3 +41,24 @@
   color: black;
   font-size: 40px;
 }
+
+.signin-window {
+  border-width: 3px;
+  border-color: #E84C59;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 3px 3px 9px #444444;
+}
+
+.input_group {
+  margin-top: 30px;
+}
+
+.signin-btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.reset {
+  width: 75px;
+}
