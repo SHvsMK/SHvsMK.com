@@ -1,0 +1,82 @@
+.nav-title {
+  background-color: black;
+  height: 60px;
+}
+
+.nav-pic {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.SHvsMK_img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-chat-name {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.nav-content-side {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.nav-content-name {
+  color: black;
+  font-size: 40px;
+  text-align: right;
+}
+
+.redirect {
+  color: #CCCCCC;
+  text-decoration: none !important;
+}
+
+.redirect:hover {
+  color: white;
+}
+
+.chat {
+  height: 600px;
+}
+
+.profile {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+
+.profile-img {
+  text-align: center;
+  margin-top: 6px;
+}
+
+.profile-name {
+  text-align: center;
+}
+
+.chat-part {
+  /*border: 1px black solid;*/
+  margin-top: 5px;
+}
+
+.Message-receive {
+  border: 1px black solid;
+  height: 400px;
+  overflow-y: auto;
+  width: 630px;
+}
+
+.Message-send {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.message {
+  width: 500px;
+}

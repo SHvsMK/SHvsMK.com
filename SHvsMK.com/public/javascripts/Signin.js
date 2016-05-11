@@ -21,8 +21,12 @@ $(document).ready(function() {
       success: function(res) {
         alert(res.message);
         if(res.success == true) {
-          localStorage.setItem('token', res.token);
-          window.location.href = '/';
+          window.localStorage.setItem('token', res.token);
+          if (referer == '/Signup' || referer == '/signup') {
+            window.location.href = '/';
+          } else {
+              window.location.href = referer;
+          }
         } else {
           window.location.href = '/Signin';
         }

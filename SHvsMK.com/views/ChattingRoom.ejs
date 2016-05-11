@@ -2,21 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>try</title>
+    <title>SHvsMK Chatting Room</title>
+    <link rel="stylesheet" href="stylesheets/ChattingRoom.css">
     <%- include header %>
   </head>
   <body>
-    <!-- <button class="try">try</button> -->
-    <div class="chat_part">
-      <div>
-        Message: <input class="Message" style="padding: 40px 40px">
+    <div class="row nav-title">
+      <div class="col-lg-3 nav-chat-name">
+        SHvsMK
       </div>
-      <div>
-        User: <input class="User">
+      <div class="col-lg-1 col-lg-offset-2 nav-pic">
+        <img class="SHvsMK_img" src="images/SHvsMK.png">
       </div>
-
-      <button class="send">send</button>
-      <input class="Receive" style="padding: 40px 40px">
+      <div class="col-lg-6 nav-content-side">
+        <div class="col-lg-2 col-lg-offset-9">
+          <a class="redirect" href="/">Home</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-lg-offset-4 nav-content-name">
+        ChattingRoom
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 col-lg-offset-2 chat">
+        <div class="col-lg-2">
+          <div class="row profile">
+            <div class="row profile-img">
+              <img class="SHvsMK_img" src="images/SHvsMK.png">
+            </div>
+            <div class="row profile-name">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 chat-part">
+          <div class="Message-receive">
+          </div>
+          <div class="Message-send">
+            <input class="message">
+            <button class="send">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <%- include footer %>

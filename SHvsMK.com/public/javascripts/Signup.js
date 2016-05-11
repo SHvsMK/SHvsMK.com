@@ -27,7 +27,7 @@ $(document).ready(function() {
       success: function(res) {
         alert(res.message);
         if(res.success == true) {
-          localStorage.setItem('token', res.token);
+          window.localStorage.setItem('token', res.token);
           window.location.href = '/Signin';
         } else {
           window.location.href = '/Signup';

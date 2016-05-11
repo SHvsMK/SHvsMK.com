@@ -6,11 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/SHvsMK');
-var blogs = require('./routes/Blog');
 var abouts = require('./routes/About');
 var config = require('./config');
 var users = require('./routes/users');
-var chat = require('./routes/ChattingRoom');
 
 var app = express();
 
@@ -30,8 +28,6 @@ app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/About', abouts);
-app.use('/Blog', blogs);
-app.use('/ChattingRoom', chat);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

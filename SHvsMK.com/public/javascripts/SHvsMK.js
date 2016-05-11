@@ -9,6 +9,7 @@ app.controller('SHvsMKCtrl', function($scope){
 });
 
 $(document).ready(function(){
+
   $('.SHvsMK_icon').hover(function(){
     $('.SHvsMK_icon_img').css('opacity', 1);
   });

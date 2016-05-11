@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  var token;
+
+  if (token) {
+    $.ajaxSetup({
+      headers: {
+        'x-access-token': token
+      }
+    });
+  }
+
   $('.Code').click(function() {
     window.location.href = '/Blog/Code';
   });
@@ -17,7 +27,13 @@ $(document).ready(function() {
   });
 
   $('.chatting_room_door').click(function() {
-    window.location.href = '/ChattingRoom';
+    token = window.localStorage.getItem('token');
+    if (token) {
+      window.location.href = '/ChattingRoom' + '?token=' + token;
+    } else {
+      window.location.href = '/ChattingRoom';
+    }
+
   });
 
   $('.Code').hover(function() {
