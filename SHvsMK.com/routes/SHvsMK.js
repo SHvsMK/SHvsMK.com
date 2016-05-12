@@ -6,7 +6,7 @@ var Signup = require('../controllers/signup');
 var Blog = require('../controllers/blog');
 var Code = require('../controllers/code');
 var Food = require('../controllers/food');
-var Travel = require('../controllers/Travel');
+var Travel = require('../controllers/travel');
 var Photo = require('../controllers/photo');
 var ChattingRoom = require('../controllers/chattingroom');
 
