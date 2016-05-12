@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-  var socket = new WebSocket("ws://10.105.150.202:8080/");
   var message = "";
   var user = "";
   var token = window.localStorage.getItem('token');
@@ -33,6 +32,7 @@ $(document).ready(function() {
     }
   });
 
+  var socket = new WebSocket("ws://10.105.76.129:8080?username=" + user);
   socket.onopen = function() {
     // ack = JSON.stringify({'sender':});
     // socket.send()
@@ -42,7 +42,20 @@ $(document).ready(function() {
 
   socket.onmessage = function(msg) {
     // display = 'div';
-    $(".Message-receive").val(msg.data);
+    m = JSON.parse(msg.data);
+    sender = m.Sender;
+    content = m.Message;
+    if (sender == user) {
+      alert("same");
+    } else {
+      alert("no");
+    }
+    // alert(msg.sender);
+    // alert(msg.isTrusted);
+    // alert(msg.data);
+    // alert(JSON.parse(msg));
+    // alert(msg.textMessage);
+    // $(".Message-receive").html('<h1>'+msg.data+'</h1>');
   }
 
   $('.send').click(function() {
