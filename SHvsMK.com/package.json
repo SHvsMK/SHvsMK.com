@@ -20,6 +20,8 @@
     "mongoose": "^4.4.14",
     "monk": "*",
     "morgan": "~1.6.1",
+    "nodemailer": "^2.4.1",
+    "nodemailer-smtp-transport": "^2.5.0",
     "serve-favicon": "~2.3.0",
     "validator": "^5.2.0"
   }
