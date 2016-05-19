@@ -21,6 +21,7 @@
     "angular-route": "^1.5.5",
     "font-awesome": "^4.6.1",
     "angular-animate": "^1.5.5",
-    "ngstorage": "^0.3.10"
+    "ngstorage": "^0.3.10",
+    "bootstrapvalidator": "bootstrapValidator#^0.5.3"
   }
 }

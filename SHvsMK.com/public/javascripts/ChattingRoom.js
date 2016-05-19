@@ -31,7 +31,7 @@ $(document).ready(function() {
     }
   });
 
-  var socket = new WebSocket("ws://10.105.76.129:8080?username=" + user);
+  var socket = new WebSocket("ws://52.35.156.146:8080?username=" + user);
   socket.onopen = function() {
   }
 

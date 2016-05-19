@@ -1,5 +1,7 @@
 var config = {
 
+  name: 'SHvsMK',
+  host: 'localhost:3000',
   // mongodb config
   // name: 'test',
   // host: 'localhost',
@@ -14,6 +16,11 @@ var config = {
       user: 'shvsmkweb@gmail.com',
       pass: '65808228'
     }
+  },
+
+  redis: {
+    host: '127.0.0.1',
+    port: 6379,
   }
 
 };

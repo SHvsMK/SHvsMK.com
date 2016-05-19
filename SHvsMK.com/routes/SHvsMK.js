@@ -21,6 +21,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/signup', Signup.ShowSignupPage);
 router.post('/signup', Signup.Signup);
+router.get('/active_account', Signup.ActiveAccount);
 
 /* Sign In Router */
 router.get('/signin', Signin.ShowSigninPage);
@@ -39,5 +40,6 @@ router.get('/blog/photo', Photo.ShowPhotoPage);
 
 router.get('/chattingroom', ChattingRoom.ShowChattingRoomPage);
 router.post('/chattingroom', ChattingRoom.CheckUserInfo);
+
 
 module.exports = router;

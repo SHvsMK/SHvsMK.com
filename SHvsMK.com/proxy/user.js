@@ -6,14 +6,14 @@ exports.getUserByUsername = function(username, callback) {
   if (username.length === 0) {
     return callback(null, []);
   }
-  User.find({ username: username }, callback);
+  User.findOne({ username: username }, callback);
 };
 
 exports.getUserByEmail = function(email, callback) {
   if (email.length === 0) {
     return callback(null, []);
   }
-  User.find({ email: email }, callback);
+  User.findOne({ email: email }, callback);
 };
 
 exports.comparePassword = function(password, confirm_password, callback) {
