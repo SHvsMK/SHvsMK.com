@@ -2,6 +2,9 @@ var proxy = require('../proxy');
 var User = proxy.User;
 var jwt = require('jsonwebtoken');
 var config = require('./../config');
+var redis = require('../common/redis').redis;
+var redisClient = require('../common/redis').redisClient;
+var logger = require('../common/logger');
 
 exports.ShowSigninPage = function(req, res) {
   var location = req.headers['referer'];
@@ -11,7 +14,6 @@ exports.ShowSigninPage = function(req, res) {
   } else {
     location = '/';
   }
-  console.log(location);
 
   res.render('Signin', {location: location});
 };
@@ -30,6 +32,7 @@ exports.Signin = function(req, res) {
     }
     if(user.length > 0) {
       var token = jwt.sign({username: username}, config.secret, {expiresIn: "1h"});
+      redisClient.set(token, true, redis.print);
       res.json({
         success: true,
         message: "Sign in successfully!",

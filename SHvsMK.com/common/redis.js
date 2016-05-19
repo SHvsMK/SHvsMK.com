@@ -11,4 +11,5 @@ redisClient.on('connect', function(err) {
   console.log('Redis is ready');
 });
 
+exports.redis = redis;
 exports.redisClient = redisClient;

@@ -43,11 +43,9 @@ exports.Signup = function(req, res) {
         return;
       }
       mail.sendActiveEmail(email, utility.md5(email + password + config.secret), username);
-      var token = jwt.sign({username: username}, config.secret, {expiresIn: 30});
       res.json({
         success: true,
         message: "Sign up successfully!",
-        token: token
       });
     });
   });

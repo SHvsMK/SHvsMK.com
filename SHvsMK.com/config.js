@@ -21,7 +21,18 @@ var config = {
   redis: {
     host: '127.0.0.1',
     port: 6379,
-  }
+  },
+
+  log: [
+    {
+      type: 'console'
+    },
+    {
+      type: 'file',
+      filename: './logs/V2.log',
+      maxLogSize: 20480,
+    }
+  ]
 
 };
 
