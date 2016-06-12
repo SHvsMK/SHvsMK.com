@@ -11,19 +11,19 @@ $(document).ready(function() {
   }
 
   $('.Code').click(function() {
-    window.location.href = '/Blog/Code';
+    window.location.href = '/Code';
   });
 
   $('.Food').click(function() {
-    window.location.href = '/Blog/Food';
+    window.location.href = '/Food';
   });
 
   $('.Travel').click(function() {
-    window.location.href = '/Blog/Travel';
+    window.location.href = '/Travel';
   });
 
   $('.Photo').click(function() {
-    window.location.href = '/Blog/Photo';
+    window.location.href = '/Photo';
   });
 
   $('.chatting_room_door').click(function() {

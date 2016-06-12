@@ -1,0 +1,9 @@
+.page-cover {
+  display: block;
+  z-index: 629;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(./../images/Code_bg.png);
+  background-size: cover;
+}

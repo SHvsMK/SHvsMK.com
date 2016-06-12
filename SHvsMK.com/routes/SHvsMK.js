@@ -30,16 +30,15 @@ router.post('/signin', Signin.Signin);
 /* Blog Router */
 router.get('/blog', Blog.ShowBlogPage);
 
-router.get('/blog/code', Code.ShowCodePage);
+router.get('/code', Code.ShowCodePage);
 
-router.get('/blog/food', Food.ShowFoodPage);
+router.get('/food', Food.ShowFoodPage);
 
-router.get('/blog/travel', Travel.ShowTravelPage);
+router.get('/travel', Travel.ShowTravelPage);
 
-router.get('/blog/photo', Photo.ShowPhotoPage);
+router.get('/photo', Photo.ShowPhotoPage);
 
 router.get('/chattingroom', ChattingRoom.ShowChattingRoomPage);
 router.post('/chattingroom', ChattingRoom.CheckUserInfo);
-
 
 module.exports = router;
